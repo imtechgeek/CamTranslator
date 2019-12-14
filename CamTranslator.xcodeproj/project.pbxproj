@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6A3E12A239FFA4900BCAE30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6A3E129239FFA4900BCAE30 /* GoogleService-Info.plist */; };
+		B6A8C2D023A1728000061222 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8C2CF23A1728000061222 /* util.swift */; };
+		B6A8C2D223A24B7A00061222 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A8C2D123A24B7A00061222 /* TranslateViewController.swift */; };
 		B6C71E69239E7F8100401D3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C71E68239E7F8100401D3D /* AppDelegate.swift */; };
 		B6C71E6B239E7F8100401D3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C71E6A239E7F8100401D3D /* SceneDelegate.swift */; };
 		B6C71E6D239E7F8100401D3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C71E6C239E7F8100401D3D /* ViewController.swift */; };
 		B6C71E70239E7F8100401D3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C71E6E239E7F8100401D3D /* Main.storyboard */; };
 		B6C71E72239E7F8400401D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C71E71239E7F8400401D3D /* Assets.xcassets */; };
 		B6C71E75239E7F8400401D3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C71E73239E7F8400401D3D /* LaunchScreen.storyboard */; };
+		FDE83CAAB15E8D9666B5F881 /* libPods-CamTranslator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C19FFCC44B64EE572556EC4F /* libPods-CamTranslator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74AED6819A3E641BDA6F74C1 /* Pods-CamTranslator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamTranslator.debug.xcconfig"; path = "Target Support Files/Pods-CamTranslator/Pods-CamTranslator.debug.xcconfig"; sourceTree = "<group>"; };
+		9FDD2CB74615DDE54C1440D5 /* Pods-CamTranslator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CamTranslator.release.xcconfig"; path = "Target Support Files/Pods-CamTranslator/Pods-CamTranslator.release.xcconfig"; sourceTree = "<group>"; };
+		B6A3E129239FFA4900BCAE30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6A8C2CF23A1728000061222 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		B6A8C2D123A24B7A00061222 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		B6C71E65239E7F8100401D3D /* CamTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C71E68239E7F8100401D3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6C71E6A239E7F8100401D3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		B6C71E71239E7F8400401D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6C71E74239E7F8400401D3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6C71E76239E7F8400401D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19FFCC44B64EE572556EC4F /* libPods-CamTranslator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CamTranslator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE83CAAB15E8D9666B5F881 /* libPods-CamTranslator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73CBDFD0EE15C98529CFE1A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19FFCC44B64EE572556EC4F /* libPods-CamTranslator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD0E2A45D5374EDD7A808BE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74AED6819A3E641BDA6F74C1 /* Pods-CamTranslator.debug.xcconfig */,
+				9FDD2CB74615DDE54C1440D5 /* Pods-CamTranslator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B6C71E5C239E7F8100401D3D = {
 			isa = PBXGroup;
 			children = (
 				B6C71E67239E7F8100401D3D /* CamTranslator */,
 				B6C71E66239E7F8100401D3D /* Products */,
+				AD0E2A45D5374EDD7A808BE2 /* Pods */,
+				73CBDFD0EE15C98529CFE1A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +89,13 @@
 				B6C71E68239E7F8100401D3D /* AppDelegate.swift */,
 				B6C71E6A239E7F8100401D3D /* SceneDelegate.swift */,
 				B6C71E6C239E7F8100401D3D /* ViewController.swift */,
+				B6A8C2CF23A1728000061222 /* util.swift */,
 				B6C71E6E239E7F8100401D3D /* Main.storyboard */,
+				B6A8C2D123A24B7A00061222 /* TranslateViewController.swift */,
 				B6C71E71239E7F8400401D3D /* Assets.xcassets */,
 				B6C71E73239E7F8400401D3D /* LaunchScreen.storyboard */,
 				B6C71E76239E7F8400401D3D /* Info.plist */,
+				B6A3E129239FFA4900BCAE30 /* GoogleService-Info.plist */,
 			);
 			path = CamTranslator;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6C71E79239E7F8400401D3D /* Build configuration list for PBXNativeTarget "CamTranslator" */;
 			buildPhases = (
+				4EE8D6CE845C08F203C4EC9D /* [CP] Check Pods Manifest.lock */,
 				B6C71E61239E7F8100401D3D /* Sources */,
 				B6C71E62239E7F8100401D3D /* Frameworks */,
 				B6C71E63239E7F8100401D3D /* Resources */,
+				37A40E8F419B3A07733C7B48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6C71E75239E7F8400401D3D /* LaunchScreen.storyboard in Resources */,
+				B6A3E12A239FFA4900BCAE30 /* GoogleService-Info.plist in Resources */,
 				B6C71E72239E7F8400401D3D /* Assets.xcassets in Resources */,
 				B6C71E70239E7F8100401D3D /* Main.storyboard in Resources */,
 			);
@@ -133,14 +169,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37A40E8F419B3A07733C7B48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CamTranslator/Pods-CamTranslator-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CamTranslator/Pods-CamTranslator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CamTranslator/Pods-CamTranslator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE8D6CE845C08F203C4EC9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CamTranslator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6C71E61239E7F8100401D3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6C71E6D239E7F8100401D3D /* ViewController.swift in Sources */,
+				B6A8C2D223A24B7A00061222 /* TranslateViewController.swift in Sources */,
 				B6C71E69239E7F8100401D3D /* AppDelegate.swift in Sources */,
 				B6C71E6B239E7F8100401D3D /* SceneDelegate.swift in Sources */,
+				B6A8C2D023A1728000061222 /* util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +362,13 @@
 		};
 		B6C71E7A239E7F8400401D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AED6819A3E641BDA6F74C1 /* Pods-CamTranslator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YF3LPP4P9P;
 				INFOPLIST_FILE = CamTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +376,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = COM.usman.CamTranslator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B6C71E7B239E7F8400401D3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FDD2CB74615DDE54C1440D5 /* Pods-CamTranslator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YF3LPP4P9P;
 				INFOPLIST_FILE = CamTranslator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = COM.usman.CamTranslator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
